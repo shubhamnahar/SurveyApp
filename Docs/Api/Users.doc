@@ -1,0 +1,66 @@
+----------------------------Create User----------------------------
+Request Type : Post 
+Request URL  : http://localhost:8080/users/createUser
+Request Body : {"userName":"bhav","user_psw":"1234","firstName":"bhav","lastName":"nahar","email":"bvnahar@gmail.com","roles":"User","createdby":"sd","phone_number": "1234577890","gender": "Male","dob": "2001-10-22"}
+
+Response type: String 
+Reponse Code : 201 Created
+Response Body: Success
+
+Error Code   : 409 Conflict
+Error Body   : Error: The user_name already exists. Please choose a different value.
+
+----------------------Get Users by id--------------------
+Request Type : Get
+Request URL  :  http://localhost:8080/users/id?id=10
+Request Body : NA
+Key			 : id
+Value		 : 10
+
+Response type: JSON
+Reponse Code : 302 found
+Response Body: {"user_id":10,"userName":"shubham","firstName":"slfk","lastName":"ad","email":"kjdf","user_psw":"1234","createddatetime":"2024-12-21T17:13:02.688619","roles":"User","phone_number":"1234567890","gender":"Male","createdby":"Admin","dob":"1999-12-15"}
+
+Error Code	 : 404 Not Found
+Error Body	 : {"path":"/users/id","error":"Resource Not Found","message":"User not found with id: 111","timestamp":"2025-01-20T17:51:43.5496079","status":404}
+
+
+-----------------Update User------------------------------
+Request Type : PUT
+Request URL  : http://localhost:8080/users
+Request Body : {
+					"user_id": 10,
+					"userName": "shubham",
+					"firstName": "slfk",
+					"lastName": "ad",
+					"email": "kjdf",
+					"user_psw": "1234",
+					"createddatetime": "2024-12-21T17:13:02.688619",
+					"roles": "User",
+					"phone_number": "1234567890",
+					"gender": "Male",
+					"createdby": "Admin",
+					"dob": "1999-12-15"
+				}
+
+Response type: JSON
+Reponse Code : 202 Accepted
+Response Body: {"user_id":10,"userName":"shubham","firstName":"slfk","lastName":"ad","email":"kjdf","user_psw":"1234","createddatetime":"2024-12-21T17:13:02.688619","roles":"User","phone_number":"1234567890","gender":"Male","createdby":"Admin","dob":"1999-12-15"}
+
+Error Code	 : 404 NOT FOUND
+Error Body	 : {"path":"/users","error":"Resource Not Found","message":"User not found with id: 111","timestamp":"2025-01-20T17:56:05.8131613","status":404}
+
+
+--------------------------Delete User---------------------------
+Request Type : DELETE
+Request URL  :  http://localhost:8080/users/id?id=11
+Request Body : NA
+Key			 : id
+Value		 : 11
+
+Response type: JSON
+Reponse Code : 200 OK
+Response Body: {"path":"users/id","message":"User Deleted Successfully.","timestamp":"2025-01-20T18:09:03.0004795","status":200}
+
+Error Code   : 404 
+Error Body   : {"path":"/users/id","error":"Resource Not Found","message":"User does not Exist.","timestamp":"2025-01-20T18:11:17.8853579","status":404}

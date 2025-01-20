@@ -1,5 +1,6 @@
 package com.boot.survey.model;
 
+import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.util.List;
 
@@ -25,6 +26,10 @@ import jakarta.persistence.OneToMany;
  * user_psw
  * createddatetime
  * Roles
+ * gender
+ * phone_number
+ * DOB
+ * Age
  * createdby
 */
 
@@ -50,6 +55,11 @@ public class UserTable {
 	private LocalDateTime createddatetime;
 	private String roles;
 	
+	@Column(unique = true)
+	private String phone_number;
+	
+	private String gender;
+	private LocalDate DOB;
 	private String createdby;
 
 	
@@ -139,14 +149,46 @@ public class UserTable {
 	public void setCreatedby(String createdby) {
 		this.createdby = createdby;
 	}
+	
+	public String getPhone_number() {
+		return phone_number;
+	}
 
+	public void setPhone_number(String phone_number) {
+		this.phone_number = phone_number;
+	}
+
+	public String getGender() {
+		return gender;
+	}
+
+	public void setGender(String gender) {
+		this.gender = gender;
+	}
+
+	public LocalDate getDOB() {
+		return DOB;
+	}
+
+	public void setDOB(LocalDate dOB) {
+		DOB = dOB;
+	}
+	
 //	@Override
 //	public String toString() {
 //		return "UserTable [user_id=" + user_id + ", userName=" + userName + ", firstName=" + firstName + ", lastName="
 //				+ lastName + ", email=" + email + ", user_psw=" + user_psw + ", createddatetime=" + createddatetime
 //				+ ", roles=" + roles + ", createdby=" + createdby + ", surveydetailstable=" + surveydetailstable + "]";
 //	}
-	
+
+//	public int getAge() {
+//		return age;
+//	}
+//
+//	public void setAge(int age) {
+//		this.age = age;
+//	}
+
 	@Override
 	public String toString() {
 	    return "UserTable [user_id=" + user_id 
@@ -157,8 +199,13 @@ public class UserTable {
 	        + ", createddatetime=" + createddatetime 
 	        + ", roles=" + roles 
 	        + ", createdby=" + createdby 
+	        + ", DOB="+DOB
+	        + ", Phone Number="+phone_number
+	        + ", Gender="+gender
+//	        + ", Age="+age
 	        + ", surveydetailstable_count=" + (surveydetailstable != null ? surveydetailstable.size() : 0) + "]";
 	}
+
 
 	
 	

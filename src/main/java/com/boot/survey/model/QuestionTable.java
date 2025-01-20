@@ -13,6 +13,7 @@ question_title
 question_type (e.g., multiple-choice, text, rating, etc.)
 is_required (Boolean)
 created_by
+order_by
 
 */
 
@@ -30,6 +31,7 @@ public class QuestionTable {
 	
 	private String question_title;
 	private String question_type;
+	private int order_by;
 	private boolean is_required;
 	
 	@ManyToOne
@@ -72,7 +74,7 @@ public class QuestionTable {
 		this.question_type = question_type;
 	}
 
-	public boolean isIs_required() {
+	public boolean getIs_required() {
 		return is_required;
 	}
 
@@ -97,11 +99,19 @@ public class QuestionTable {
 		this.options = options;
 	}
 
+	public int getOrder_by() {
+		return order_by;
+	}
+
+	public void setOrder_by(int order_by) {
+		this.order_by = order_by;
+	}
+
 	@Override
 	public String toString() {
 		return "QuestionTable [question_id=" + question_id + ", surveydetailstable=" + surveydetailstable
 				+ ", question_title=" + question_title + ", question_type=" + question_type + ", is_required="
-				+ is_required + ", usertable_id= "+ (usertable != null ? usertable.getUser_id() : "null")+", options=" + (options != null ? options.size() : 0) + "]";
+				+ is_required +", order_by="+order_by+ ", usertable_id= "+ (usertable != null ? usertable.getUser_id() : "null")+", options=" + (options != null ? options.size() : 0) + "]";
 	}
 	
 	

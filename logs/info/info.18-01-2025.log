@@ -1,0 +1,309 @@
+[18-Jan-2025 11:16:56.539] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=13h7m59s199ms153µs200ns).
+[18-Jan-2025 11:46:56.182] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m54s437ms869µs800ns).
+[18-Jan-2025 12:45:08.679] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=36m12s210ms959µs600ns).
+[18-Jan-2025 14:15:50.784] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=33m41s265ms49µs500ns).
+[18-Jan-2025 14:21:10.027] INFO-- Saved Response is::Success
+[18-Jan-2025 14:21:35.597] WARN-- Resolved [java.util.NoSuchElementException: Survey not found with ID:20]
+[18-Jan-2025 14:22:03.439] WARN-- Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unrecognized token 'true2': was expecting (JSON String, Number, Array, Object or token 'null', 'true' or 'false')]
+[18-Jan-2025 14:22:41.132] WARN-- Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `boolean` from String "true2": only "true"/"True"/"TRUE" or "false"/"False"/"FALSE" recognized]
+[18-Jan-2025 14:22:48.365] INFO-- Saved Response is::Success
+[18-Jan-2025 14:45:14.202] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2m22s992ms876µs400ns).
+[18-Jan-2025 17:47:01.036] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h48m21s50ms121µs300ns).
+[18-Jan-2025 17:57:51.559] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=8m20s482ms261µs).
+[18-Jan-2025 18:08:07.537] WARN-- HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=6m43s902ms571µs300ns).
+[18-Jan-2025 20:13:10.414] INFO-- Application shutdown requested.
+[18-Jan-2025 20:13:10.545] INFO-- Commencing graceful shutdown. Waiting for active requests to complete
+[18-Jan-2025 20:13:10.562] INFO-- Pausing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:13:10.577] INFO-- Graceful shutdown complete
+[18-Jan-2025 20:13:10.584] INFO-- Stopping ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:13:10.615] INFO-- Closing JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:13:10.675] INFO-- HikariPool-1 - Shutdown initiated...
+[18-Jan-2025 20:13:10.782] INFO-- HikariPool-1 - Shutdown completed.
+[18-Jan-2025 20:13:45.821] INFO-- Starting SurveyAppApplication using Java 23.0.1 with PID 29912 (C:\Users\Shubham\Documents\SpringBoot\SurveyApp\target\classes started by Shubham in C:\Users\Shubham\Documents\SpringBoot\SurveyApp)
+[18-Jan-2025 20:13:45.832] INFO-- No active profile set, falling back to 1 default profile: "default"
+[18-Jan-2025 20:13:45.894] INFO-- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[18-Jan-2025 20:13:45.894] INFO-- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[18-Jan-2025 20:13:46.474] INFO-- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[18-Jan-2025 20:13:46.533] INFO-- Finished Spring Data repository scanning in 53 ms. Found 4 JPA repository interfaces.
+[18-Jan-2025 20:13:47.042] INFO-- Tomcat initialized with port 8080 (http)
+[18-Jan-2025 20:13:47.052] INFO-- Initializing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:13:47.054] INFO-- Starting service [Tomcat]
+[18-Jan-2025 20:13:47.054] INFO-- Starting Servlet engine: [Apache Tomcat/10.1.33]
+[18-Jan-2025 20:13:47.157] INFO-- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[18-Jan-2025 20:13:47.160] INFO-- Initializing Spring embedded WebApplicationContext
+[18-Jan-2025 20:13:47.160] INFO-- Root WebApplicationContext: initialization completed in 1265 ms
+[18-Jan-2025 20:13:47.265] INFO-- HHH000204: Processing PersistenceUnitInfo [name: default]
+[18-Jan-2025 20:13:47.316] INFO-- HHH000412: Hibernate ORM core version 6.6.2.Final
+[18-Jan-2025 20:13:47.342] INFO-- HHH000026: Second-level cache disabled
+[18-Jan-2025 20:13:47.616] INFO-- No LoadTimeWeaver setup: ignoring JPA class transformer
+[18-Jan-2025 20:13:47.641] INFO-- HikariPool-1 - Starting...
+[18-Jan-2025 20:13:48.228] INFO-- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@62e6b3d2
+[18-Jan-2025 20:13:48.230] INFO-- HikariPool-1 - Start completed.
+[18-Jan-2025 20:13:48.273] WARN-- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[18-Jan-2025 20:13:48.291] INFO-- HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[18-Jan-2025 20:13:49.540] INFO-- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18-Jan-2025 20:13:49.734] WARN-- GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists questiontable add column order_by integer not null" via JDBC [ERROR: column "order_by" of relation "questiontable" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists questiontable add column order_by integer not null" via JDBC [ERROR: column "order_by" of relation "questiontable" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.boot.survey.SurveyAppApplication.main(SurveyAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "order_by" of relation "questiontable" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 40 common frames omitted
+[18-Jan-2025 20:13:49.812] WARN-- SQL Warning Code: 0, SQLState: 00000
+[18-Jan-2025 20:13:49.812] WARN-- constraint "uk1cj1c5umljjjqx8wvju3cjp9j" of relation "user_table" does not exist, skipping
+[18-Jan-2025 20:13:50.087] INFO-- Initialized JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:13:50.460] WARN-- Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userservice': Error creating bean with name 'userService' defined in file [C:\Users\Shubham\Documents\SpringBoot\SurveyApp\target\classes\com\boot\survey\service\UserService.class]: Failed to instantiate [com.boot.survey.service.UserService]: Constructor threw exception
+[18-Jan-2025 20:13:50.460] INFO-- Closing JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:13:50.466] INFO-- HikariPool-1 - Shutdown initiated...
+[18-Jan-2025 20:13:50.706] INFO-- HikariPool-1 - Shutdown completed.
+[18-Jan-2025 20:13:50.709] INFO-- Stopping service [Tomcat]
+[18-Jan-2025 20:13:50.726] INFO-- 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[18-Jan-2025 20:14:42.509] INFO-- Starting SurveyAppApplication using Java 23.0.1 with PID 35720 (C:\Users\Shubham\Documents\SpringBoot\SurveyApp\target\classes started by Shubham in C:\Users\Shubham\Documents\SpringBoot\SurveyApp)
+[18-Jan-2025 20:14:42.516] INFO-- No active profile set, falling back to 1 default profile: "default"
+[18-Jan-2025 20:14:42.558] INFO-- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[18-Jan-2025 20:14:42.559] INFO-- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[18-Jan-2025 20:14:43.041] INFO-- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[18-Jan-2025 20:14:43.098] INFO-- Finished Spring Data repository scanning in 51 ms. Found 4 JPA repository interfaces.
+[18-Jan-2025 20:14:43.506] INFO-- Tomcat initialized with port 8080 (http)
+[18-Jan-2025 20:14:43.514] INFO-- Initializing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:14:43.517] INFO-- Starting service [Tomcat]
+[18-Jan-2025 20:14:43.517] INFO-- Starting Servlet engine: [Apache Tomcat/10.1.33]
+[18-Jan-2025 20:14:43.609] INFO-- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[18-Jan-2025 20:14:43.612] INFO-- Initializing Spring embedded WebApplicationContext
+[18-Jan-2025 20:14:43.612] INFO-- Root WebApplicationContext: initialization completed in 1053 ms
+[18-Jan-2025 20:14:43.713] INFO-- HHH000204: Processing PersistenceUnitInfo [name: default]
+[18-Jan-2025 20:14:43.749] INFO-- HHH000412: Hibernate ORM core version 6.6.2.Final
+[18-Jan-2025 20:14:43.771] INFO-- HHH000026: Second-level cache disabled
+[18-Jan-2025 20:14:43.959] INFO-- No LoadTimeWeaver setup: ignoring JPA class transformer
+[18-Jan-2025 20:14:43.979] INFO-- HikariPool-1 - Starting...
+[18-Jan-2025 20:14:44.255] INFO-- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@60e3d2c7
+[18-Jan-2025 20:14:44.257] INFO-- HikariPool-1 - Start completed.
+[18-Jan-2025 20:14:44.281] WARN-- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[18-Jan-2025 20:14:44.296] INFO-- HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[18-Jan-2025 20:14:45.122] INFO-- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18-Jan-2025 20:14:45.249] WARN-- GenerationTarget encountered exception accepting command : Error executing DDL "alter table if exists questiontable add column order_by integer not null" via JDBC [ERROR: column "order_by" of relation "questiontable" contains null values]
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "alter table if exists questiontable add column order_by integer not null" via JDBC [ERROR: column "order_by" of relation "questiontable" contains null values]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:94)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlString(AbstractSchemaMigrator.java:576)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.applySqlStrings(AbstractSchemaMigrator.java:516)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.migrateTable(AbstractSchemaMigrator.java:334)
+	at org.hibernate.tool.schema.internal.GroupedSchemaMigratorImpl.performTablesMigration(GroupedSchemaMigratorImpl.java:84)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.performMigration(AbstractSchemaMigrator.java:233)
+	at org.hibernate.tool.schema.internal.AbstractSchemaMigrator.doMigration(AbstractSchemaMigrator.java:112)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:280)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.lambda$process$5(SchemaManagementToolCoordinator.java:144)
+	at java.base/java.util.HashMap.forEach(HashMap.java:1430)
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:141)
+	at org.hibernate.boot.internal.SessionFactoryObserverForSchemaExport.sessionFactoryCreated(SessionFactoryObserverForSchemaExport.java:37)
+	at org.hibernate.internal.SessionFactoryObserverChain.sessionFactoryCreated(SessionFactoryObserverChain.java:35)
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:324)
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:463)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1506)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:390)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:366)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1849)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1798)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:601)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:288)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:970)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.boot.survey.SurveyAppApplication.main(SurveyAppApplication.java:10)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.postgresql.util.PSQLException: ERROR: column "order_by" of relation "questiontable" contains null values
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2733)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2420)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:372)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:517)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:434)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:356)
+	at org.postgresql.jdbc.PgStatement.executeCachedSql(PgStatement.java:341)
+	at org.postgresql.jdbc.PgStatement.executeWithFlags(PgStatement.java:317)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:312)
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94)
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java)
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:80)
+	... 40 common frames omitted
+[18-Jan-2025 20:14:45.435] INFO-- Initialized JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:14:45.807] WARN-- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[18-Jan-2025 20:14:46.122] INFO-- LiveReload server is running on port 35729
+[18-Jan-2025 20:14:46.141] INFO-- Starting ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:14:46.205] INFO-- Tomcat started on port 8080 (http) with context path '/'
+[18-Jan-2025 20:14:46.212] INFO-- Started SurveyAppApplication in 4.087 seconds (process running for 4.735)
+[18-Jan-2025 20:18:15.628] INFO-- Application shutdown requested.
+[18-Jan-2025 20:18:15.681] INFO-- Commencing graceful shutdown. Waiting for active requests to complete
+[18-Jan-2025 20:18:15.696] INFO-- Pausing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:18:15.936] INFO-- Graceful shutdown complete
+[18-Jan-2025 20:18:15.936] INFO-- Stopping ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:18:15.956] INFO-- Closing JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:18:15.959] INFO-- HikariPool-1 - Shutdown initiated...
+[18-Jan-2025 20:18:15.967] INFO-- HikariPool-1 - Shutdown completed.
+[18-Jan-2025 20:18:18.254] INFO-- Starting SurveyAppApplication using Java 23.0.1 with PID 35372 (C:\Users\Shubham\Documents\SpringBoot\SurveyApp\target\classes started by Shubham in C:\Users\Shubham\Documents\SpringBoot\SurveyApp)
+[18-Jan-2025 20:18:18.262] INFO-- No active profile set, falling back to 1 default profile: "default"
+[18-Jan-2025 20:18:18.303] INFO-- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[18-Jan-2025 20:18:18.303] INFO-- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[18-Jan-2025 20:18:18.796] INFO-- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[18-Jan-2025 20:18:18.857] INFO-- Finished Spring Data repository scanning in 54 ms. Found 4 JPA repository interfaces.
+[18-Jan-2025 20:18:19.240] INFO-- Tomcat initialized with port 8080 (http)
+[18-Jan-2025 20:18:19.249] INFO-- Initializing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:18:19.250] INFO-- Starting service [Tomcat]
+[18-Jan-2025 20:18:19.251] INFO-- Starting Servlet engine: [Apache Tomcat/10.1.33]
+[18-Jan-2025 20:18:19.334] INFO-- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[18-Jan-2025 20:18:19.337] INFO-- Initializing Spring embedded WebApplicationContext
+[18-Jan-2025 20:18:19.338] INFO-- Root WebApplicationContext: initialization completed in 1034 ms
+[18-Jan-2025 20:18:19.436] INFO-- HHH000204: Processing PersistenceUnitInfo [name: default]
+[18-Jan-2025 20:18:19.470] INFO-- HHH000412: Hibernate ORM core version 6.6.2.Final
+[18-Jan-2025 20:18:19.495] INFO-- HHH000026: Second-level cache disabled
+[18-Jan-2025 20:18:19.730] INFO-- No LoadTimeWeaver setup: ignoring JPA class transformer
+[18-Jan-2025 20:18:19.768] INFO-- HikariPool-1 - Starting...
+[18-Jan-2025 20:18:20.079] INFO-- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5e3ad7f2
+[18-Jan-2025 20:18:20.080] INFO-- HikariPool-1 - Start completed.
+[18-Jan-2025 20:18:20.106] WARN-- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[18-Jan-2025 20:18:20.129] INFO-- HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[18-Jan-2025 20:18:20.987] INFO-- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18-Jan-2025 20:18:21.303] INFO-- Initialized JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:18:21.625] WARN-- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[18-Jan-2025 20:18:21.904] INFO-- LiveReload server is running on port 35729
+[18-Jan-2025 20:18:21.921] INFO-- Starting ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:18:21.948] INFO-- Tomcat started on port 8080 (http) with context path '/'
+[18-Jan-2025 20:18:21.954] INFO-- Started SurveyAppApplication in 4.061 seconds (process running for 4.739)
+[18-Jan-2025 20:20:05.376] INFO-- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[18-Jan-2025 20:20:05.376] INFO-- Initializing Servlet 'dispatcherServlet'
+[18-Jan-2025 20:20:05.377] INFO-- Completed initialization in 1 ms
+[18-Jan-2025 20:20:05.420] WARN-- Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'email' for method parameter type String is not present]
+[18-Jan-2025 20:21:52.221] WARN-- Resolved [java.util.NoSuchElementException: User not found with email id : fsf1]
+[18-Jan-2025 20:28:25.004] WARN-- Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Cannot deserialize value of type `java.time.LocalDate` from String "15/12/1999": Failed to deserialize java.time.LocalDate: (java.time.format.DateTimeParseException) Text '15/12/1999' could not be parsed at index 0]
+[18-Jan-2025 20:34:24.789] INFO-- Application shutdown requested.
+[18-Jan-2025 20:34:24.791] INFO-- Commencing graceful shutdown. Waiting for active requests to complete
+[18-Jan-2025 20:34:24.792] INFO-- Pausing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:34:24.797] INFO-- Graceful shutdown complete
+[18-Jan-2025 20:34:24.798] INFO-- Stopping ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:34:24.803] INFO-- Closing JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:34:24.806] INFO-- HikariPool-1 - Shutdown initiated...
+[18-Jan-2025 20:34:24.816] INFO-- HikariPool-1 - Shutdown completed.
+[18-Jan-2025 20:34:27.204] INFO-- Starting SurveyAppApplication using Java 23.0.1 with PID 36692 (C:\Users\Shubham\Documents\SpringBoot\SurveyApp\target\classes started by Shubham in C:\Users\Shubham\Documents\SpringBoot\SurveyApp)
+[18-Jan-2025 20:34:27.210] INFO-- No active profile set, falling back to 1 default profile: "default"
+[18-Jan-2025 20:34:27.250] INFO-- Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[18-Jan-2025 20:34:27.251] INFO-- For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[18-Jan-2025 20:34:27.729] INFO-- Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+[18-Jan-2025 20:34:27.793] INFO-- Finished Spring Data repository scanning in 57 ms. Found 4 JPA repository interfaces.
+[18-Jan-2025 20:34:28.178] INFO-- Tomcat initialized with port 8080 (http)
+[18-Jan-2025 20:34:28.186] INFO-- Initializing ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:34:28.187] INFO-- Starting service [Tomcat]
+[18-Jan-2025 20:34:28.187] INFO-- Starting Servlet engine: [Apache Tomcat/10.1.33]
+[18-Jan-2025 20:34:28.278] INFO-- At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+[18-Jan-2025 20:34:28.281] INFO-- Initializing Spring embedded WebApplicationContext
+[18-Jan-2025 20:34:28.282] INFO-- Root WebApplicationContext: initialization completed in 1030 ms
+[18-Jan-2025 20:34:28.374] INFO-- HHH000204: Processing PersistenceUnitInfo [name: default]
+[18-Jan-2025 20:34:28.413] INFO-- HHH000412: Hibernate ORM core version 6.6.2.Final
+[18-Jan-2025 20:34:28.435] INFO-- HHH000026: Second-level cache disabled
+[18-Jan-2025 20:34:28.624] INFO-- No LoadTimeWeaver setup: ignoring JPA class transformer
+[18-Jan-2025 20:34:28.645] INFO-- HikariPool-1 - Starting...
+[18-Jan-2025 20:34:28.902] INFO-- HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@5b12e5f5
+[18-Jan-2025 20:34:28.903] INFO-- HikariPool-1 - Start completed.
+[18-Jan-2025 20:34:28.926] WARN-- HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+[18-Jan-2025 20:34:28.941] INFO-- HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 17.2
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+[18-Jan-2025 20:34:29.782] INFO-- HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+[18-Jan-2025 20:34:30.092] INFO-- Initialized JPA EntityManagerFactory for persistence unit 'default'
+[18-Jan-2025 20:34:30.418] WARN-- spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[18-Jan-2025 20:34:30.698] INFO-- LiveReload server is running on port 35729
+[18-Jan-2025 20:34:30.717] INFO-- Starting ProtocolHandler ["http-nio-8080"]
+[18-Jan-2025 20:34:30.742] INFO-- Tomcat started on port 8080 (http) with context path '/'
+[18-Jan-2025 20:34:30.748] INFO-- Started SurveyAppApplication in 3.9 seconds (process running for 4.559)
+[18-Jan-2025 20:35:09.663] INFO-- Initializing Spring DispatcherServlet 'dispatcherServlet'
+[18-Jan-2025 20:35:09.663] INFO-- Initializing Servlet 'dispatcherServlet'
+[18-Jan-2025 20:35:09.664] INFO-- Completed initialization in 1 ms

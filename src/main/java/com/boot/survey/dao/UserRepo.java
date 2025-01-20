@@ -11,4 +11,6 @@ import com.boot.survey.model.UserTable;
 public interface UserRepo extends JpaRepository<UserTable, Integer>{
 
 	UserTable findByuserName(String userName);
+
+	 Optional<UserTable> findByemail(String email);
 }

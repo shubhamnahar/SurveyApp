@@ -2,7 +2,7 @@ package com.boot.survey.service;
 
 import java.time.LocalDateTime;
 import java.util.List;
-import java.util.Optional;
+import java.util.NoSuchElementException;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -50,6 +50,13 @@ public class SurveyService {
 			System.out.println("here.......");
 		}
 		return null;
+	}
+
+	public SurveyDetailsTable getSurveybyId(Integer id) {
+		
+		SurveyDetailsTable s=SDR.findById(id) 
+				.orElseThrow(() -> new NoSuchElementException("Survey not found with id: " + id));
+		return s;
 	}
 
 }

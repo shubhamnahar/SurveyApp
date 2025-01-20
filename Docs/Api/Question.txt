@@ -1,0 +1,46 @@
+------------------------Adding Questions in the Survey-----------------------
+Request Type : Post
+Request URL  : http://localhost:8080/addQuestion
+Request Body : {"questionTitle":"95453","questionType":"Numeric","isRequired":true,"surveyId":"2","createdBy":"234"}
+			   {"questionTitle":"What do you like?","questionType":"MultipleChoice","isRequired":true,"surveyId":"3","createdBy":"shubham","options":[{"optionsTitle":"Jeans"},{"optionsTitle":"T-Shirt"}]}
+
+Response type: String
+Reponse Code : 201 CREATED
+Response Body: Success
+
+Error Code   : 404 NOT FOUND
+Error Body   : {
+					"path": "/addQuestion",
+					"error": "Resource Not Found",
+					"message": "User not found with username: 234",
+					"timestamp": "2025-01-17T19:55:06.8037074",
+					"status": 404
+				}
+
+
+--------------------View Question------------------------------
+Request Type : GET
+Request URL  : http://localhost:8080/viewQuestion/16
+Request Body : NA
+
+Response type: JSON
+Reponse Code : 200 OK
+Response Body: {
+					"question_id": 16,
+					"questionTitle": "What do you like?",
+					"questionType": "MultipleChoice",
+					"surveyId": 3,
+					"createdBy": "shubham",
+					"options": [
+						{
+							"optionsTitle": "Jeans"
+						},
+						{
+							"optionsTitle": "T-Shirt"
+						}
+					],
+					"isRequired": true
+				}
+
+Error Code   : 404 NOT FOUND
+Error Body   : "No Question found with the Question id: 45"

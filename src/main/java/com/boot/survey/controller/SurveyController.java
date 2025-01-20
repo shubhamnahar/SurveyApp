@@ -1,15 +1,14 @@
 package com.boot.survey.controller;
 
-import java.util.List;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Controller;
-import org.springframework.ui.Model;
+
 import org.springframework.web.bind.annotation.*;
 
-import com.boot.survey.dao.QuestionRepo;
-import com.boot.survey.model.QuestionTable;
+
 import com.boot.survey.model.SurveyDetailsTable;
 import com.boot.survey.responseBeans.SurveyToQuestionBean;
 import com.boot.survey.service.SurveyService;
@@ -29,6 +28,15 @@ public class SurveyController {
 		SurveyToQuestionBean saveSurvey=surveyservice.generateSurvey(SDT);
 		return ResponseEntity.ok(saveSurvey);
 	}
+	
+	@GetMapping("{id}")
+	public ResponseEntity<SurveyDetailsTable> getSurveybyId(@PathVariable Integer id){
+		SurveyDetailsTable s=surveyservice.getSurveybyId(id);
+		
+		return new ResponseEntity<SurveyDetailsTable>(s,HttpStatus.OK); 
+	}
+	
+	
 	
 	
 	

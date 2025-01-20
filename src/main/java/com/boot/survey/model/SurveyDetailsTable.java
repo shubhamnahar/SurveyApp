@@ -14,7 +14,6 @@ package com.boot.survey.model;
 */
 
 import java.time.LocalDateTime;
-import java.util.Optional;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
@@ -49,6 +48,7 @@ public class SurveyDetailsTable {
 	@JsonFormat(pattern = "yyyy-MM-dd'T'HH:mm")
 	private LocalDateTime EndDate;
 	
+	private Boolean payment_verified;
 	
 	
 	
@@ -110,6 +110,12 @@ public class SurveyDetailsTable {
 //				+ Modifieddatetime + ", StartDate=" + StartDate + ", EndDate=" + EndDate + "]";
 //	}
 	
+	public Boolean getPayment_verified() {
+		return payment_verified;
+	}
+	public void setPayment_verified(Boolean payment_verified) {
+		this.payment_verified = payment_verified;
+	}
 	@Override
 	public String toString() {
 	    return "SurveyDetailsTable [survey_id=" + surveyId 
@@ -118,6 +124,7 @@ public class SurveyDetailsTable {
 	        + ", usertable_id=" + (usertable != null ? usertable.getUser_id() : "null")
 	        + ", Createddatetime=" + Createddatetime 
 	        + ", Modifieddatetime=" + Modifieddatetime 
+	        + ", payment_verified=" + payment_verified 
 	        + ", StartDate=" + StartDate 
 	        + ", EndDate=" + EndDate + "]";
 	}
